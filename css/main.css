@@ -1,0 +1,183 @@
+/* тут я импортировал стили для текста с google fonts */
+@import url('https://fonts.googleapis.com/css?family=Lato|Raleway');
+
+body{
+	background-color: #f2f2f2;/* Установил сероватый фон сайта,*/
+	font-family: "Lato";/* установил шрифт Lato,*/
+	font-weight: 300px; /* насыщмнность шрифта (100-900)*/
+	font-size: 16px;/* текст 16px, */
+	color: #555;/* чёрный цвет шрифта #555,*/
+
+	-webkit-font-smoothing: antialiased; /* установил гладкий шрифт если его увеличить*/
+	-webkit-overflow-scrolling: touchl; /*Чтобы сайт можно было норамально просколить с помощью тача */
+
+	margin-top: 70px; /* Теперб отступ сверху 70px от шапки для body */
+}
+
+
+#body_finans{
+	background-color:white;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family:"Raleway"; /* Шрифт для загололвков Raleway */
+	font-weight: 300; /* Слабая насыщенность (100 - 900)*/
+	color: #333;/* Нейочень тёмный цвет для текта*/
+}
+
+
+p {
+	line-height: 28px;/* межстрочный интервал между строками текста 28px*/
+	margin-bottom: 25px; /* Величина нижнего отступа*/
+}
+
+
+.centered{ /* указывая этот класс в html текст будет по центру */
+	text-align: center;
+}
+
+
+a{ /* Стили для ссылок*/
+	color: #f85c37; /* ссылка будет красного цвета */
+}
+
+
+a:hover, a:focus{ /* стили при наведении и нажатии */
+	color: #7b7b7b; /* приятно-серый цвет текста */
+	text-decoration: none; /* ссылки не подчёркиваются*/
+	outline: 0; /* при наведении не будет границ вокруг ссылок */
+}
+
+
+
+hr{ /* Стили для горизонтальных лининй */
+	display: block; /* Элемент будет показан как блок */
+	height: 1px; /* Высота линии будет 1 px */
+	border: 0;
+	border-top: 1px solid #ccc; /* сверху у элемента будет толщина линии 1 px сплошная и серый цвет */
+	margin: 1em 0; /* отступы снаружи 0 */
+	padding: 0; /* отступ внутри элемента 0 */
+
+}
+
+
+.navbar{ /* основные слили для  */
+	font-width: 800; /* Установили начертание шрифта (100 - 900) */
+	font-size: 14px; /* Размер шрифта 14 пикселей */
+	padding-top: 15px; /* отступ внутри блока с верху 15 пикселей */
+	padding-bottom: 15px; /* отступ внутри блока с низу 15 пикселей */
+}
+
+
+.navbar-inverse{
+	background: #2d2d2d;
+	border-color: #2d2d2d;
+}
+
+
+
+/* Стили для логотипа */
+.navbar-inverse .navbar-brand{
+	color: #999;
+	font-width: bolder; /* логотип будет тёмным */
+	font-size: 22px; /* размер шрифта*/
+	letter-spacing: 1px; /* Определяет интерввал между символами в пределах элемента (логотипа) */
+}
+
+
+#vsplav:hover{
+	background-color: #EC345E;
+	border-radius: 5px;
+}
+
+
+#headerwrap{
+	/*background: url(../img/) no-repeat center top; /* Эта картинка не будет повторяться и располоена по центру */
+	margin-top: -10px; /* Будет под шапкой */
+	padding-top: 20px; /* Отступ сверху в нутри блока будет 20px */
+	text-align: center; /* Текст лежит по центру */
+	background-attachment: relative; /* как задний фон прилигает к блоку, позиция relative*/
+	background-position: center center; /* позиция по центру как по вертикали так и по горизонтали */
+	min-height: 500px; /* минимальная высота будет 500px */
+	width: 100%; /* ширина будет на всю ширину экрана */
+
+	background-size: 100%; /* маштабирует фоновые изображения */
+
+	-webkit-background-size: cover; /* Для того чтобы изображение нормально выглядело на всех разрешениях экрана (САФАРИ) */
+	-moz-background-size: cover;/* ДЛЯ МАЗИЛЫ */
+	-o-background-size: cover; /* ДЛЯ ОПЕРЫ */
+	background-size: cover; /* для всего остального*/
+}
+
+
+#headerwrap h1{ /* слиди для основного заголовка h1 */
+	margin-top: 100px; /* для того чтобы был далеко от верха */
+	color: white; /* текст будет белого цвета */
+	font-size: 70px; /* размер шрифта */
+	font-width: 300; /* насыщенность */
+	letter-spacing: 3px; /* интервал между символами */ 
+}
+
+
+#headerwrap h2{
+	color: white;/* цвет текста*/
+	font-size: 40px; /*размер шрифта*/
+	letter-spacing: 2px;/* отступ между буквами*/
+	text-decoration: uppercase; /* всё в верхнем регистре */
+}
+
+
+/* стли для контейнера в котором 3 колонки под картинкой*/
+.w{
+	padding-top: 35px; /* теперь наш контейнер с отчтпом от картинки на 35px */
+}
+
+.w h4{
+	font-size: 25px;
+}
+
+
+
+/* Стили для трёз картинок */
+#dg{
+	background: #e0e0e0;
+	padding-top: 70px;
+	padding-bottom: 70px;
+	text-align: center;
+}
+
+dg h4{
+	font-size: 40px;
+}
+
+
+.glavn_str_zagolovok:hover{
+	color:#EC345E;
+}
+
+
+
+
+#glavn_str_zagolovok_2:hover{
+	color:#EC345E;
+}
+
+
+
+#trc:hover{
+	color:#EC345E;
+}
+
+
+
+
+.foto{
+	max-height:700px
+}
+
+
+
+
+
+
+

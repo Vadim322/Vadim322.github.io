@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8"><!--Тут мы указвли кодировку utf-8-->
+	<meta name="viewport" content="width=device-width, initiql-scale=1.0"><!--Тут мы указвли чтобы на мобильных устройствах сайт отображался коректно-->
+	<title>Bootstrap сайт</title>
+	<link rel="stylesheet" href="css/bootstrap.css"><!--Тут подключили стили от bootstrap-->
+	<link rel="stylesheet" href="css/font-awesome.min.css"><!--Подключили стили от bootstrap-->
+	<link rel="stylesheet" href="css/main.css"><!--Стили в кторых буду писать я-->
+</head>
+<body>
+	<!-- Шапка (крутая) -->
+	<div class="navbar navbar-inverse navbar-fixed-top" > <!--navbar - шапка(потом её зафиксировал navbar-fixed-top) | сделала инверсия шапки при помщи navbar-inverse -->
+		<div class="container">
+			<div class="navbar-header"><!--заголовок-->
+				<!--КНОПКА С ТРЕМЯ ЧЁРТОЧКАМИ КОТОРАЯ ВИДНА НА СМАРТФОНАХ-->
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse"> <!--Кнопка которая будет видна при уменьшении экрана до мобильного телефона | data-toggle="collapse" - при нажатиии будет что то открываться, data-targer="" - то что будет открываться,-->
+					<span class="icon-bar"></span><!--Три чёрточки возле кнопки-->
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<!--Заголовок сайта-->
+				<a class="navbar-brand" href="index.html" id="glavn_str_zagolovok_2">Дом 8 А</a>
+			</div>
+			<!--Блок который при нажатии будет расскрываться в список с 5 ячейками-->
+			<div class="navbar-collapse collapse"> <!--Добвавили collase в конце для того чтобы раскрывался в виде списка-->
+				<ul class="nav navbar-nav navbar-right"> <!--nav - навигация, будет справо -->
+					<li><a href="index.html" id="vsplav">Главная</a></li>
+					<li><a href="news.html" id="vsplav">Новости</a></li>
+					<li><a href="document.html" id="vsplav">Документы</a></li>
+					<li><a href="project.html" id="vsplav">Проекты</a></li>
+					<li><a href="current_content.html" id="vsplav">Текущее содержание</a></li>
+					<li><a href="post.html" id="vsplav"><i class="fa fa-envelope-o" aria-hidden="true"></i></a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<!-- Блок который будет находиться в верху под шапкой -->
+	<div id="headerwrap" >
+		<!--Слайдер-->
+				<div id="carousel" class="carousel slide"><!--class="carousel" класс slide - добавляет css анимацию для переходов data-ride="carousel" - присоединяет bootstrap для карусели и плавной загрузки-->
+					<ol class="carousel-indicators"><!--Будут показываться ьекущий слайд-->
+						<li class="active" data-target="#carousel" data-slide="0"></li><!--Индификатор carousel для того чтобы слайды листались именно нашего слайдера с id="carousel", data-slide="0" - порядок (0 - первый в js)-->
+						<li data-target="#carousel" data-slide="1"></li>
+					</ol>
+
+					<!--Блок который содержит в себе все слайды-->
+					<div class="carousel-inner" >
+						<div class="item active">
+							<img src="img\dome_3.png">
+							<!--Описание слайда 1-->
+							<div class="carousel-caption">
+								<!--Тут можно вставить описание-->
+							</div>
+						</div>
+						<div class="item" style="max-height:1000px">
+							<img src="img\dome_2 .JPG">
+							<!--Описание слайда 2-->
+							<div class="carousel-caption">
+								<!--Тут можно вставить описание-->
+							</div>
+						</div>
+					
+
+					<!--Стрелка влево и вправо-->
+					<a href="#carousel" class="left carousel-control" data-slide="prev"><!-- Стрелка вслево, data-slide="prev" - для bootstrap js куда листать слайд, prev- предыдущий слайд-->
+						<span class="glyphicon glyphicon-chevron-left"></span>
+					</a>
+					<a href="#carousel" class="right carousel-control" data-slide="next"><!--Стрелка вправо, next -слудующий -->
+						<span class="glyphicon glyphicon-chevron-right"></span>
+
+					</a>
+				</div>
+
+		</div>
+	</div>
+	<!-- Информационный контейнер (1) -->
+	<div class="container w">
+		<div class="row centered"> <!-- класс row centered - поставит всё по центру -->
+			<br><br> <!-- Два отступа -->
+			<!-- блок 1 -->
+			<div class="col-lg-4"> <!-- Тут записали ширину блока. 4 така как их будет 3 (12:4=3) -->
+				<a href="current_content.html"><h4 class="glavn_str_zagolovok">Текущее содержание</h4></a>
+				<p style="font-size:17px">Технический надзор за конст­руктивными элементами, незамедлительное устранение аварий в общедомовом имуществе </p>
+			</div>
+			<!-- блок 2 -->
+			<div class="col-lg-4"> <!-- Тут записали ширину блока. 4 така как их будет 3 (12:4=3) -->
+				<a href="project.html"><h4 class="glavn_str_zagolovok">Проекты</h4></a>
+				<p style="font-size:17px">Целостная совокупность моделей, свойств или характеристик, описанных в форме, пригодной для реализации системы</p>
+
+			</div>
+			<!-- блок 3 -->
+			<div class="col-lg-4"> <!-- Тут записали ширину блока. 4 така как их будет 3 (12:4=3) -->
+				<a href="finans.html"><h4 class="glavn_str_zagolovok">Финансы</h4></a>
+				<p style="font-size:17px">Финансы – это совокупность экономических отношений, возникающая в процессе создания, а также использования фондов.</p>
+
+				
+			</div>
+		</div>
+		
+	</div>
+	
+
+	<!--Подключаем min.js и bootstrap в конце для более быстрого функционала-->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

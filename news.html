@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8"><!--Тут мы указвли кодировку utf-8-->
+	<meta name="viewport" content="width=device-width, initiql-scale=1.0"><!--Тут мы указвли чтобы на мобильных устройствах сайт отображался коректно-->
+	<title>Bootstrap сайт</title>
+	<link rel="stylesheet" href="css/bootstrap.css"><!--Тут подключили стили от bootstrap-->
+	<link rel="stylesheet" href="css/font-awesome.min.css"><!--Подключили стили от bootstrap-->
+	<link rel="stylesheet" href="css/main.css"><!--Стили в кторых буду писать я-->
+</head>
+<body>
+	<!-- Шапка (крутая) -->
+	<div class="navbar navbar-inverse navbar-fixed-top" > <!--navbar - шапка(потом её зафиксировал navbar-fixed-top) | сделала инверсия шапки при помщи navbar-inverse -->
+		<div class="container">
+			<div class="navbar-header"><!--заголовок-->
+				<!--КНОПКА С ТРЕМЯ ЧЁРТОЧКАМИ КОТОРАЯ ВИДНА НА СМАРТФОНАХ-->
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse"> <!--Кнопка которая будет видна при уменьшении экрана до мобильного телефона | data-toggle="collapse" - при нажатиии будет что то открываться, data-targer="" - то что будет открываться,-->
+					<span class="icon-bar"></span><!--Три чёрточки возле кнопки-->
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<!--Заголовок сайта-->
+				<a class="navbar-brand" href="index.html" id="glavn_str_zagolovok_2">Дом 8 А</a>
+			</div>
+			<!--Блок который при нажатии будет расскрываться в список с 5 ячейками-->
+			<div class="navbar-collapse collapse"> <!--Добвавили collase в конце для того чтобы раскрывался в виде списка-->
+				<ul class="nav navbar-nav navbar-right"> <!--nav - навигация, будет справо -->
+					<li><a href="index.html" id="vsplav">Главная</a></li>
+					<li><a href="news.html" id="vsplav">Новости</a></li>
+					<li><a href="document.html" id="vsplav">Документы</a></li>
+					<li><a href="project.html" id="vsplav">Проекты</a></li>
+					<li><a href="current_content.html" id="vsplav">Текущее содержание</a></li>
+					<li><a href="post.html" id="vsplav"><i class="fa fa-envelope-o" aria-hidden="true"></i></a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+
+
+	<style>
+		body{
+			padding:20px;
+			padding-top:50px;
+		}
+	</style>
+
+	<div class="panel panel-default">
+		<div class="panel-heading" style="font-size: 22px; font-weight: bold"><a href="index.html"><i class="fa fa-home" aria-hidden="true" style="color:#CF6E25" ></a></i> Заголовок новости</div>
+		<div class="panel-body" style="font-size:19px">
+		<img src="http://static.ucl.ac.uk/repository/silva/index.shtml/media2/xmedia2.jpg.pagespeed.ic.IYRGZ4towc.jpg" class="img-responsive img-rounded" style="float:left; padding-right:10px;">Новости — оперативная информация, которая представляет политический, социальный или экономический интерес для аудитории в своей свежести, то есть сообщения о событиях, произошедших недавно или происходящих в данный момент. Также новостями называют программы (собрание нескольких новостей) на телевидении и радио, а в печатной прессе или на веб-сайтах — сводки новостей, например, в специальной рубрике в газете.
+
+		Как правило, новости на телевидении и радио передаются несколько раз в день, начинаются в начале часа и длятся от двух минут до часа. Новости обычно бывают из таких областей, как политика, экономика, наука, культура, спорт, с прогнозом погоды в заключении. Западной традицией предполагается, что новости должны быть изложены максимально нейтрально и объективно и отдельно от комментариев. Выбор новостей для подборки осуществляется редакцией. Специальный выпуск — это выпуск, посвященный только одной теме, продолжительность и периодичность специальных выпусков может отличаться от обычных выпусков.
+		</div>
+	</div>
+
+
+
+<!--Подключаем min.js и bootstrap в конце для более быстрого функционала-->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+</body>
+</html>
